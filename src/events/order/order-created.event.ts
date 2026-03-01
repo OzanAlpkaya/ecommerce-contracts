@@ -1,4 +1,4 @@
-import { OrderStatus } from '../../enums/order-status.enum';
+import { OrderStatus } from '../../enums/order-status.enum.js';
 
 export interface OrderCreatedEvent {
   eventId: string;        // UUID - idempotency için

@@ -1,12 +1,24 @@
 {
-  "name": "@ecommerce/contracts",
-  "version": "1.0.0",
-  "description": "Shared types, events and messages for ecommerce microservices",
-  "main": "src/index.ts",
+  "name": "@ozanalpkaya/contracts",
+  "version": "1.0.5",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "build": "tsc",
+    "publish:pkg": "npm run build && npm publish"
   },
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "typescript": "^5.7.3"
   }
 }
