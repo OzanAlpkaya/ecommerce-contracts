@@ -1,0 +1,12 @@
+{
+  "name": "@ecommerce/contracts",
+  "version": "1.0.0",
+  "description": "Shared types, events and messages for ecommerce microservices",
+  "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
